@@ -22,27 +22,27 @@ jQuery(function ($) {
             tracks = [{
                 "track": 1,
                 "name": "Gasoline Outlaws - Outlaws",
-                "length": "2:46",
+                "length": "4:11",
                 "file": "Gasoline Outlaws - Outlaws"
             }, {
                 "track": 2,
                 "name": "Disciple - Outlaws",
-                "length": "8:31",
+                "length": "3:29",
                 "file": "Disciple - Outlaws"
             }, {
                 "track": 3,
                 "name": "Ayo & Teo - Rolex",
-                "length": "5:02",
+                "length": "2:36",
                 "file": "Ayo & Teo - Rolex"
             }, {
                 "track": 4,
                 "name": "Fabolous ft. Jeremih - It's My Time",
-                "length": "8:32",
+                "length": "4:00",
                 "file": "Fabolous ft. Jeremih - It's My Time"
             }, {
                 "track": 5,
                 "name": "AC-DC - TNT",
-                "length": "5:05",
+                "length": "3:41",
                 "file": "AC-DC - TNT"
             }],
             buildPlaylist = $.each(tracks, function(key, value) {
