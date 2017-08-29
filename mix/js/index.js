@@ -106,12 +106,12 @@ jQuery(function ($) {
             }),
             btnFadeOut = $('#btnFadeOut').click(function () {
                 if (playing) {
-                    audio.animate({volume: 0}, 1000, function () {
+                    $('#audio1').animate({volume: 0}, 1000, function () {
                         audio.pause();
                     });
                 }
                 else {
-                    audio.animate({volume: 1}, 1000, function () {
+                    $('#audio1').animate({volume: 1}, 1000, function () {
                         audio.play();
                     });
                 }
