@@ -64,9 +64,9 @@ jQuery(function ($) {
                 npAction.text('Now Playing...');
             }).bind('pause', function () {
                 playing = false;
-                npAction.text('Paused...');
+                npAction.text('Paused.');
             }).bind('ended', function () {
-                npAction.text('Paused...');
+                npAction.text('Paused.');
                 if ((index + 1) < trackCount) {
                     index++;
                     loadTrack(index);
