@@ -26,24 +26,24 @@ jQuery(function ($) {
                 "file": "Gasoline Outlaws - Outlaws"
             }, {
                 "track": 2,
-                "name": "The Forsaken - Broadwing Studio (Final Mix)",
+                "name": "Disciple - Outlaws",
                 "length": "8:31",
-                "file": "BS_TF"
+                "file": "Disciple - Outlaws"
             }, {
                 "track": 3,
-                "name": "All The King's Men - Broadwing Studio (Final Mix)",
+                "name": "Ayo & Teo - Rolex",
                 "length": "5:02",
-                "file": "BS_ATKM"
+                "file": "Ayo & Teo - Rolex"
             }, {
                 "track": 4,
-                "name": "The Forsaken - Broadwing Studio (First Mix)",
+                "name": "Fabolous ft. Jeremih - It's My Time",
                 "length": "8:32",
-                "file": "BSFM_TF"
+                "file": "Fabolous ft. Jeremih - It's My Time"
             }, {
                 "track": 5,
-                "name": "All The King's Men - Broadwing Studio (First Mix)",
+                "name": "AC-DC - TNT",
                 "length": "5:05",
-                "file": "BSFM_ATKM"
+                "file": "AC-DC - TNT"
             }, {
                 "track": 6,
                 "name": "All This Is - Alternate Cuts",
