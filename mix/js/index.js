@@ -75,6 +75,7 @@ jQuery(function ($) {
                     audio.pause();
                     index = 0;
                     loadTrack(index);
+		    audio.play();
                 }
             }).get(0),
             btnPrev = $('#btnPrev').click(function () {
@@ -104,16 +105,16 @@ jQuery(function ($) {
                 }
             }),
             btnFadeOut = $('#btnFadeOut').click(function () {
-				if (playing) {
-					audio.animate({volume: 0}, 1000, function () {
-						audio.pause();
-					});
-				}
-				else {
-					audio.animate({volume: 1}, 1000, function () {
-						audio.play();
-					});
-				}
+                if (playing) {
+                    audio.animate({volume: 0}, 1000, function () {
+                        audio.pause();
+                    });
+                }
+                else {
+                    audio.animate({volume: 1}, 1000, function () {
+                        audio.play();
+                    });
+                }
             }),
             li = $('#plList li').click(function () {
                 var id = parseInt($(this).index());
