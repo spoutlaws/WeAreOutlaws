@@ -71,11 +71,13 @@ jQuery(function ($) {
                     index++;
                     loadTrack(index);
                     audio.play();
+		    $('#audio1').stop().animate({volume: 1}, 500);
                 } else {
                     audio.pause();
                     index = 0;
                     loadTrack(index);
 		    audio.play();
+	            $('#audio1').stop().animate({volume: 1}, 500);
                 }
             }).get(0),
             btnPrev = $('#btnPrev').click(function () {
@@ -84,6 +86,7 @@ jQuery(function ($) {
                     loadTrack(index);
                     if (playing) {
                         audio.play();
+			$('#audio1').stop().animate({volume: 1}, 500);
                     }
                 } else {
                     audio.pause();
@@ -97,6 +100,7 @@ jQuery(function ($) {
                     loadTrack(index);
                     if (playing) {
                         audio.play();
+			$('#audio1').stop().animate({volume: 1}, 500);
                     }
                 } else {
                     audio.pause();
@@ -111,9 +115,8 @@ jQuery(function ($) {
                     });
                 }
                 else {
-                    $('#audio1').animate({volume: 1}, 1000, function () {
                         audio.play();
-                    });
+			$('#audio1').stop().animate({volume: 1}, 1000);
                 }
             }),
             li = $('#plList li').click(function () {
@@ -132,6 +135,7 @@ jQuery(function ($) {
             playTrack = function (id) {
                 loadTrack(id);
                 audio.play();
+		$('#audio1').stop().animate({volume: 1}, 500);
             };
         extension = audio.canPlayType('audio/mpeg') ? '.mp3' : audio.canPlayType('audio/ogg') ? '.ogg' : '';
         loadTrack(index);
