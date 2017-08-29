@@ -104,17 +104,14 @@ jQuery(function ($) {
                 }
             }),
             btnFadeOut = $('#btnFadeOut').click(function () {
-				var button = $(this);
 				if (playing) {
 					audio.animate({volume: 0}, 1000, function () {
 						audio.pause();
-						button.text("Fade In");
 					});
 				}
 				else {
 					audio.animate({volume: 1}, 1000, function () {
 						audio.play();
-						button.text("Fade Out");
 					});
 				}
             }),
