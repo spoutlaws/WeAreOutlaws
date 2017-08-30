@@ -17,7 +17,7 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://rawgit.com/spoutlaws/hype/master/mix/',
+            mediaPath = 'https://git.spoutlaws.org/spoutlaws/hype/master/mix/',
             extension = '',
             tracks = [{
                 "track": 1,
