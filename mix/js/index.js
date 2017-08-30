@@ -19,7 +19,7 @@ jQuery(function ($) {
             playing = false,
             mediaPath = 'https://rawgit.com/spoutlaws/hype/master/mix/',
             extension = '',
-            tracks = [, {
+            tracks = [{
                 "track": 1,
                 "name": "AC-DC - TNT (SPO Remix)",
                 "length": "1:22",
