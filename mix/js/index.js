@@ -19,31 +19,56 @@ jQuery(function ($) {
             playing = false,
             mediaPath = 'https://rawgit.com/spoutlaws/hype/master/mix/',
             extension = '',
-            tracks = [{
+            tracks = [, {
                 "track": 1,
+                "name": "AC-DC - TNT (SPO Remix)",
+                "length": "1:22",
+                "file": "AC-DC - TNT (SPO Remix)"
+            }, {
+                "track": 2,
                 "name": "Gasoline Outlaws - Outlaws",
                 "length": "4:11",
                 "file": "Gasoline Outlaws - Outlaws"
             }, {
-                "track": 2,
-                "name": "Disciple - Outlaws",
-                "length": "3:29",
-                "file": "Disciple - Outlaws"
-            }, {
                 "track": 3,
+                "name": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Remix)",
+                "length": "1:40",
+                "file": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Remix)"
+            }, {
+                "track": 4,
                 "name": "Ayo & Teo - Rolex",
                 "length": "2:36",
                 "file": "Ayo & Teo - Rolex"
             }, {
-                "track": 4,
-                "name": "Fabolous ft. Jeremih - It's My Time",
-                "length": "4:00",
-                "file": "Fabolous ft. Jeremih - It's My Time"
-            }, {
                 "track": 5,
-                "name": "AC-DC - TNT",
-                "length": "3:41",
-                "file": "AC-DC - TNT"
+                "name": "Jock Jams - Lets get ready to Rumble",
+                "length": "3:52",
+                "file": "Jock Jams - Lets get ready to Rumble"
+            }, {
+                "track": 6,
+                "name": "Disciple - Outlaws",
+                "length": "3:29",
+                "file": "Disciple - Outlaws"
+            }, {
+                "track": 7,
+                "name": "Fabolous ft. Jeremih - It's My Time (SPO Remix)",
+                "length": "1:50",
+                "file": "Fabolous ft. Jeremih - It's My Time (SPO Remix)"
+            }, {
+                "track": 8,
+                "name": "Kendrick Lamar - HUMBLE (SPO Remix)",
+                "length": "1:45",
+                "file": "Kendrick Lamar - HUMBLE (SPO Remix)"
+            }, {
+                "track": 9,
+                "name": "Flo Rida - My House (Clean)",
+                "length": "3:10",
+                "file": "Flo Rida - My House (Clean)"
+            }, {
+                "track": 10,
+                "name": "The White Stripes - Seven Nation Army (Woah oh oh oh Kill_mR_DJ Remix Edit)",
+                "length": "4:00",
+                "file": "The White Stripes - Seven Nation Army (Woah oh oh oh Kill_mR_DJ Remix Edit)"
             }],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,
