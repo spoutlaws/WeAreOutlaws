@@ -21,9 +21,9 @@ jQuery(function ($) {
             extension = '',
             tracks = [{
                 "track": 1,
-                "name": "AC-DC - TNT (SPO Remix)",
+                "name": "AC-DC - TNT (SPO Mix)",
                 "length": "1:22",
-                "file": "AC-DC - TNT (SPO Remix)"
+                "file": "AC-DC - TNT (SPO Mix)"
             }, {
                 "track": 2,
                 "name": "Gasoline Outlaws - Outlaws",
@@ -31,44 +31,44 @@ jQuery(function ($) {
                 "file": "Gasoline Outlaws - Outlaws"
             }, {
                 "track": 3,
-                "name": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Remix)",
+                "name": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Mix)",
                 "length": "1:40",
-                "file": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Remix)"
+                "file": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Mix)"
             }, {
                 "track": 4,
-                "name": "Ayo & Teo - Rolex",
+                "name": "Ayo & Teo - Rolex (SPO Mix)",
                 "length": "2:36",
-                "file": "Ayo & Teo - Rolex"
+                "file": "Ayo & Teo - Rolex (SPO Mix)"
             }, {
                 "track": 5,
-                "name": "Jock Jams - Lets get ready to Rumble",
+                "name": "Jock Jams - Lets get ready to Rumble (SPO Mix)",
                 "length": "3:52",
-                "file": "Jock Jams - Lets get ready to Rumble"
+                "file": "Jock Jams - Lets get ready to Rumble (SPO Mix)"
             }, {
                 "track": 6,
-                "name": "Disciple - Outlaws",
+                "name": "Disciple - Outlaws (SPO Mix)",
                 "length": "3:29",
-                "file": "Disciple - Outlaws"
+                "file": "Disciple - Outlaws (SPO Mix)"
             }, {
                 "track": 7,
-                "name": "Fabolous ft. Jeremih - It's My Time (SPO Remix)",
+                "name": "Fabolous ft. Jeremih - It's My Time (SPO Mix)",
                 "length": "1:50",
-                "file": "Fabolous ft. Jeremih - It's My Time (SPO Remix)"
+                "file": "Fabolous ft. Jeremih - It's My Time (SPO Mix)"
             }, {
                 "track": 8,
-                "name": "Kendrick Lamar - HUMBLE (SPO Remix)",
+                "name": "Kendrick Lamar - HUMBLE (SPO Mix)",
                 "length": "1:45",
-                "file": "Kendrick Lamar - HUMBLE (SPO Remix)"
+                "file": "Kendrick Lamar - HUMBLE (SPO Mix)"
             }, {
                 "track": 9,
-                "name": "Flo Rida - My House (Clean)",
+                "name": "Flo Rida - My House (SPO Mix)",
                 "length": "3:10",
-                "file": "Flo Rida - My House (Clean)"
+                "file": "Flo Rida - My House (SPO Mix)"
             }, {
                 "track": 10,
-                "name": "The White Stripes - Seven Nation Army (Woah oh oh oh Kill_mR_DJ Remix Edit)",
+                "name": "The White Stripes - Seven Nation Army (Woah oh oh oh SPO Mix)",
                 "length": "4:00",
-                "file": "The White Stripes - Seven Nation Army (Woah oh oh oh Kill_mR_DJ Remix Edit)"
+                "file": "The White Stripes - Seven Nation Army (Woah oh oh oh SPO Mix)"
             }],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,
