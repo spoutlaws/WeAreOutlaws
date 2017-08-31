@@ -22,7 +22,7 @@ jQuery(function ($) {
             tracks = [{
                 "track": 1,
                 "name": "AC-DC - TNT (SPO Mix)",
-                "length": "1:22",
+                "length": "1:26",
                 "file": "AC-DC - TNT (SPO Mix)"
             }, {
                 "track": 2,
@@ -32,27 +32,27 @@ jQuery(function ($) {
             }, {
                 "track": 3,
                 "name": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Mix)",
-                "length": "1:40",
+                "length": "2:03",
                 "file": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Mix)"
             }, {
                 "track": 4,
                 "name": "Ayo & Teo - Rolex (SPO Mix)",
-                "length": "2:36",
+                "length": "2:39",
                 "file": "Ayo & Teo - Rolex (SPO Mix)"
             }, {
                 "track": 5,
                 "name": "Jock Jams - Lets get ready to Rumble (SPO Mix)",
-                "length": "3:52",
+                "length": "2:07",
                 "file": "Jock Jams - Lets get ready to Rumble (SPO Mix)"
             }, {
                 "track": 6,
                 "name": "Disciple - Outlaws (SPO Mix)",
-                "length": "3:29",
+                "length": "2:28",
                 "file": "Disciple - Outlaws (SPO Mix)"
             }, {
                 "track": 7,
                 "name": "Fabolous ft. Jeremih - It's My Time (SPO Mix)",
-                "length": "1:50",
+                "length": "1:52",
                 "file": "Fabolous ft. Jeremih - It's My Time (SPO Mix)"
             }, {
                 "track": 8,
@@ -62,12 +62,12 @@ jQuery(function ($) {
             }, {
                 "track": 9,
                 "name": "Flo Rida - My House (SPO Mix)",
-                "length": "3:10",
+                "length": "1:18",
                 "file": "Flo Rida - My House (SPO Mix)"
             }, {
                 "track": 10,
                 "name": "The White Stripes - Seven Nation Army (Woah oh oh oh SPO Mix)",
-                "length": "4:00",
+                "length": "2:12",
                 "file": "The White Stripes - Seven Nation Army (Woah oh oh oh SPO Mix)"
             }],
             buildPlaylist = $.each(tracks, function(key, value) {
