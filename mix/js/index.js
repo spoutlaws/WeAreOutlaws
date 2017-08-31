@@ -32,7 +32,7 @@ jQuery(function ($) {
             }, {
                 "track": 3,
                 "name": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Mix)",
-                "length": "2:03",
+                "length": "1:40",
                 "file": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Mix)"
             }, {
                 "track": 4,
