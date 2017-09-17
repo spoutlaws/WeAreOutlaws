@@ -91,18 +91,18 @@ jQuery(function ($) {
                 playing = false;
                 npAction.text('Paused.');
             }).bind('ended', function () {
-                npAction.text('Paused.');
+                npAction.text('Loading Next Song...');
                 if ((index + 1) < trackCount) {
                     index++;
                     loadTrack(index);
-                    audio.play();
-		    $('#audio1').stop().animate({volume: 1}, 500);
+                    audio.pause();
+		    //$('#audio1').stop().animate({volume: 1}, 500);
                 } else {
                     audio.pause();
                     index = 0;
                     loadTrack(index);
-		    audio.play();
-	            $('#audio1').stop().animate({volume: 1}, 500);
+		    //audio.play();
+	            //$('#audio1').stop().animate({volume: 1}, 500);
                 }
             }).get(0),
             btnPrev = $('#btnPrev').click(function () {
@@ -110,7 +110,7 @@ jQuery(function ($) {
                     index--;
                     loadTrack(index);
                     if (playing) {
-                        audio.play();
+                        audio.pause();
 			$('#audio1').stop().animate({volume: 1}, 500);
                     }
                 } else {
@@ -124,7 +124,7 @@ jQuery(function ($) {
                     index++;
                     loadTrack(index);
                     if (playing) {
-                        audio.play();
+                        audio.pause();
 			$('#audio1').stop().animate({volume: 1}, 500);
                     }
                 } else {
