@@ -94,11 +94,13 @@ jQuery(function ($) {
                 npAction.text('Loading Next Song...');
                 if ((index + 1) < trackCount) {
                     audio.pause();
+		    npAction.text('Paused.');
 		    index++;
                     loadTrack(index);
 		    //$('#audio1').stop().animate({volume: 1}, 500);
                 } else {
                     audio.pause();
+		    npAction.text('Paused.');
                     index = 0;
                     loadTrack(index);
 		    //audio.play();
@@ -107,23 +109,25 @@ jQuery(function ($) {
             }).get(0),
             btnPrev = $('#btnPrev').click(function () {
                 if ((index - 1) > -1) {
-		    audio.play();
 		    audio.pause();
+		    npAction.text('Paused.');
                     index--;
                     loadTrack(index);
                 } else {
-		    audio.play();
                     audio.pause();
+		    npAction.text('Paused.');
                     index = 0;
                     loadTrack(index);
                 }
             }),
             btnNext = $('#btnNext').click(function () {
                 if ((index + 1) < trackCount) {
-		    audio.play();
-                    audio.pause();
 		    index++;
                     loadTrack(index);
+                    audio.pause();
+		    npAction.text('Paused.');
+		    audio.play();
+		    audio.pause();
                 } else {
 		    audio.play();
                     audio.pause();
