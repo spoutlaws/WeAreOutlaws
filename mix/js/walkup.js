@@ -107,10 +107,12 @@ jQuery(function ($) {
             }).get(0),
             btnPrev = $('#btnPrev').click(function () {
                 if ((index - 1) > -1) {
+		    audio.play();
 		    audio.pause();
                     index--;
                     loadTrack(index);
                 } else {
+		    audio.play();
                     audio.pause();
                     index = 0;
                     loadTrack(index);
@@ -118,10 +120,12 @@ jQuery(function ($) {
             }),
             btnNext = $('#btnNext').click(function () {
                 if ((index + 1) < trackCount) {
+		    audio.play();
                     audio.pause();
 		    index++;
                     loadTrack(index);
                 } else {
+		    audio.play();
                     audio.pause();
                     index = 0;
                     loadTrack(index);
