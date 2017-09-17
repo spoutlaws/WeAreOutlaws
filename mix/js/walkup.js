@@ -93,9 +93,9 @@ jQuery(function ($) {
             }).bind('ended', function () {
                 npAction.text('Loading Next Song...');
                 if ((index + 1) < trackCount) {
-                    index++;
-                    loadTrack(index);
                     audio.pause();
+		    index++;
+                    loadTrack(index);
 		    //$('#audio1').stop().animate({volume: 1}, 500);
                 } else {
                     audio.pause();
@@ -107,12 +107,9 @@ jQuery(function ($) {
             }).get(0),
             btnPrev = $('#btnPrev').click(function () {
                 if ((index - 1) > -1) {
+		    audio.pause();
                     index--;
                     loadTrack(index);
-                    if (playing) {
-                        audio.pause();
-			$('#audio1').stop().animate({volume: 1}, 500);
-                    }
                 } else {
                     audio.pause();
                     index = 0;
@@ -121,12 +118,9 @@ jQuery(function ($) {
             }),
             btnNext = $('#btnNext').click(function () {
                 if ((index + 1) < trackCount) {
-                    index++;
+                    audio.pause();
+		    index++;
                     loadTrack(index);
-                    if (playing) {
-                        audio.pause();
-			$('#audio1').stop().animate({volume: 1}, 500);
-                    }
                 } else {
                     audio.pause();
                     index = 0;
