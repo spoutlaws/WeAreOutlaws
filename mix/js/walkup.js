@@ -93,29 +93,29 @@ jQuery(function ($) {
             }).bind('ended', function () {
                 npAction.text('Loading Next Song...');
                 if ((index + 1) < trackCount) {
-                    audio.pause();
-		    npAction.text('Paused.');
 		    index++;
                     loadTrack(index);
+		    if(playing) {
+		        audio.pause();
+		    }
 		    //$('#audio1').stop().animate({volume: 1}, 500);
                 } else {
-                    audio.pause();
-		    npAction.text('Paused.');
                     index = 0;
                     loadTrack(index);
-		    //audio.play();
-	            //$('#audio1').stop().animate({volume: 1}, 500);
+		    if(playing) {
+		        audio.pause();
+		    }
                 }
             }).get(0),
             btnPrev = $('#btnPrev').click(function () {
                 if ((index - 1) > -1) {
-		    audio.pause();
-		    npAction.text('Paused.');
                     index--;
                     loadTrack(index);
+		    if(playing) {
+		        audio.pause();
+		    }
                 } else {
                     audio.pause();
-		    npAction.text('Paused.');
                     index = 0;
                     loadTrack(index);
                 }
@@ -124,12 +124,10 @@ jQuery(function ($) {
                 if ((index + 1) < trackCount) {
 		    index++;
                     loadTrack(index);
-                    audio.pause();
-		    npAction.text('Paused.');
-		    audio.play();
-		    audio.pause();
+		    if(playing) {
+		        audio.pause();
+		    }
                 } else {
-		    audio.play();
                     audio.pause();
                     index = 0;
                     loadTrack(index);
