@@ -144,6 +144,9 @@ jQuery(function ($) {
 			$('#audio1').stop().animate({volume: 1}, 1000);
                 }
             }),
+            btnSwitch = $('#btnSwitch').click(function () {
+                window.location.href = "walkup.html"
+            }),
             li = $('#plList li').click(function () {
                 var id = parseInt($(this).index());
                 if (id !== index) {
