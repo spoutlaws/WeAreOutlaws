@@ -97,6 +97,7 @@ jQuery(function ($) {
                     loadTrack(index);
 		    if(playing) {
 		        audio.pause();
+		        npAction.text('Paused.');
 		    }
 		    //$('#audio1').stop().animate({volume: 1}, 500);
                 } else {
