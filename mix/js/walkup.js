@@ -91,13 +91,12 @@ jQuery(function ($) {
                 playing = false;
                 npAction.text('Paused.');
             }).bind('ended', function () {
-                npAction.text('Loading Next Song...');
+                npAction.text('Next Song Loaded.');
                 if ((index + 1) < trackCount) {
 		    index++;
                     loadTrack(index);
 		    if(playing) {
-		        audio.pause();
-		        npAction.text('Paused.');
+		        audio.pause();		        
 		    }
 		    //$('#audio1').stop().animate({volume: 1}, 500);
                 } else {
@@ -107,6 +106,7 @@ jQuery(function ($) {
 		        audio.pause();
 		    }
                 }
+		npAction.text('Paused.');
             }).get(0),
             btnPrev = $('#btnPrev').click(function () {
                 if ((index - 1) > -1) {
