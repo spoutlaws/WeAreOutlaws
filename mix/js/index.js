@@ -165,7 +165,7 @@ jQuery(function ($) {
                 audio.play();
 		$('#audio1').stop().animate({volume: 1}, 500);
             };
-        extension = audio.canPlayType('audio/mpeg') ? '.mp3' : audio.canPlayType('audio/ogg') ? '.ogg' : audio.canPlayType('audio/ogg') ? '.MP3' : '';
+        extension = audio.canPlayType('audio/mpeg') ? '.mp3' : audio.canPlayType('audio/ogg') ? '.ogg' : audio.canPlayType('audio/mpeg') ? '.MP3' : '';
         loadTrack(index);
     }
 });
