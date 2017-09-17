@@ -145,7 +145,7 @@ jQuery(function ($) {
                 }
             }),
             btnSwitch = $('#btnSwitch').click(function () {
-                window.location.href = "walkup.html"
+                window.location.href = "https://git.spoutlaws.org/spoutlaws/hype/master/mix/walkup.html"
             }),
             li = $('#plList li').click(function () {
                 var id = parseInt($(this).index());
