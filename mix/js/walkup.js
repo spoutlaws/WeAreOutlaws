@@ -21,54 +21,54 @@ jQuery(function ($) {
             extension = '',
             tracks = [{
                 "track": 1,
-                "name": "AC-DC - TNT (SPO Mix)",
-                "length": "1:26",
-                "file": "AC-DC - TNT (SPO Mix)"
+                "name": "12 - Darius",
+                "length": "0:19",
+                "file": "12 - Darius"
             }, {
                 "track": 2,
-                "name": "Gasoline Outlaws - Outlaws",
-                "length": "4:11",
-                "file": "Gasoline Outlaws - Outlaws"
+                "name": "02 - Davon",
+                "length": "0:19",
+                "file": "02 - Davon"
             }, {
                 "track": 3,
-                "name": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Mix)",
-                "length": "1:40",
-                "file": "Wiz Khalifa Ft. Iggy Azalea - Go Hard or Go Home (SPO Mix)"
+                "name": "07 - Brady",
+                "length": "0:19",
+                "file": "07 - Brady"
             }, {
                 "track": 4,
-                "name": "Ayo & Teo - Rolex (SPO Mix)",
-                "length": "2:39",
-                "file": "Ayo & Teo - Rolex (SPO Mix)"
+                "name": "14 - Cole",
+                "length": "0:19",
+                "file": "14 - Cole"
             }, {
                 "track": 5,
-                "name": "Jock Jams - Lets get ready to Rumble (SPO Mix)",
-                "length": "2:07",
-                "file": "Jock Jams - Lets get ready to Rumble (SPO Mix)"
+                "name": "05 - Carter",
+                "length": "0:19",
+                "file": "05 - Carter"
             }, {
                 "track": 6,
-                "name": "Disciple - Outlaws (SPO Mix)",
-                "length": "2:28",
-                "file": "Disciple - Outlaws (SPO Mix)"
+                "name": "03 - Blaze",
+                "length": "0:19",
+                "file": "03 - Blaze"
             }, {
                 "track": 7,
-                "name": "Fabolous ft. Jeremih - It's My Time (SPO Mix)",
-                "length": "1:52",
-                "file": "Fabolous ft. Jeremih - It's My Time (SPO Mix)"
+                "name": "01 - Owen",
+                "length": "0:19",
+                "file": "01 - Owen"
             }, {
                 "track": 8,
-                "name": "Kendrick Lamar - HUMBLE (SPO Mix)",
-                "length": "1:45",
-                "file": "Kendrick Lamar - HUMBLE (SPO Mix)"
+                "name": "10 - John Hodges",
+                "length": "0:19",
+                "file": "10 - John Hodges"
             }, {
                 "track": 9,
-                "name": "Flo Rida - My House (SPO Mix)",
-                "length": "1:18",
-                "file": "Flo Rida - My House (SPO Mix)"
+                "name": "13 - Landon",
+                "length": "0:19",
+                "file": "13 - Landon"
             }, {
                 "track": 10,
-                "name": "The White Stripes - Seven Nation Army (Woah oh oh oh SPO Mix)",
-                "length": "2:12",
-                "file": "The White Stripes - Seven Nation Army (Woah oh oh oh SPO Mix)"
+                "name": "11 - Blake",
+                "length": "0:19",
+                "file": "11 - Blake"
             }],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,
@@ -166,7 +166,7 @@ jQuery(function ($) {
                 audio.play();
 		$('#audio1').stop().animate({volume: 1}, 500);
             };
-        extension = audio.canPlayType('audio/mpeg') ? '.mp3' : audio.canPlayType('audio/ogg') ? '.ogg' : '';
+        extension = audio.canPlayType('audio/mpeg') ? '.mp3' : audio.canPlayType('audio/ogg') ? '.ogg' : audio.canPlayType('audio/ogg') ? '.MP3' : '';
         loadTrack(index);
     }
 });
